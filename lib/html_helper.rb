@@ -1,7 +1,7 @@
 module HtmlHelpers
 
   # Basic implementation of a HTML SELECT helper
-  def select(resource_name, field_name, options_list, selected_value)
+  def html_select(resource_name, field_name, options_list, selected_value)
     html = ''
     options_list.each do |nv_pair|
       option_value = nv_pair.keys.first
@@ -12,6 +12,6 @@ module HtmlHelpers
       html << option_name
       html << "</option>"
     end
-    "<select name=\"#{resource_name}_#{field_name}\">#{html}</select>"
+    "<select name=\"[#{resource_name}]#{field_name}\">#{html}</select>"
   end
 end

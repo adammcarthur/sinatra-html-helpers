@@ -6,7 +6,7 @@ A soon to be small collection of handy HTML helpers for Sinatra.
 
 **Simple Example:**
 
-    html_select(nil, "color", "{'red': 'Red', 'blue': 'Blue', 'green': 'Green' }")
+    html_select(nil, "color", "{'red' => 'Red', 'blue' => 'Blue', 'green' => 'Green' }")
     
     # HTML Output
     <select name="color" id="color">
@@ -18,7 +18,7 @@ A soon to be small collection of handy HTML helpers for Sinatra.
 **Advanced Example:**
 
     # Full Example
-    html_select("user", "city", { 'mel': 'Melbourne', 'nyc': 'New York City', 'lon': 'London'}, "London", "city")
+    html_select("user", "city", { 'mel' => 'Melbourne', 'nyc' => 'New York City', 'lon' => 'London'}, "London", "city")
 
     # HTML Output
     <select name="[user]city" id="user_city" class="city">

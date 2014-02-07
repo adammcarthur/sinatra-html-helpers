@@ -6,7 +6,7 @@ module HtmlHelpers
     output = ""
     
     options_list.each do |option_value, option_name|
-      html << "<option value=\"#{option_value}\" id=\"#{option_value}\""
+      html << "<option value=\"#{option_value}\""
       html << " selected=\"true\"" if option_value == selected_value
       html << ">"
       html << option_name

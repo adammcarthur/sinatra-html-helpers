@@ -16,14 +16,14 @@ def html_select(field_name, options_list, selected_value=nil, html_class=nil, ht
   return output
 end
 
-def html_datepicker(field_name, years, selected=[], offset=nil, ascending=false, html_class=nil, html_id=nil)
+def html_datepicker(field_name, years, selected_value=[], offset=nil, ascending=false, html_class=nil, html_id=nil)
   require "date"
   # initialize blank variables for use below
   months, days, year_options, output, selected_day, selected_month, selected_year, years_arr = "", "", "", "", "", "", "", Array.new
   # assign variables to selected values if they exist
-  selected_day = selected[0].to_i if selected[0]
-  selected_month = selected[1].to_s if selected[1]
-  selected_year = selected[2].to_i if selected[2]
+  selected_day = selected_value[0].to_i if selected[0]
+  selected_month = selected_value[1].to_s if selected[1]
+  selected_year = selected_value[2].to_i if selected[2]
 
   ##### DAYS #####
   31.times do |n|

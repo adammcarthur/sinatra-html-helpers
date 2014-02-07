@@ -1,4 +1,4 @@
-A soon to be small collection of handy HTML helpers for Sinatra.
+Sinatra HTML Helpers makes rendering difficult markup elements in Sinatra really simple:
 
 ### HTML Select Box: ###
 

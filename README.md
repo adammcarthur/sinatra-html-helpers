@@ -1,4 +1,4 @@
-Sinatra HTML Helpers makes rendering difficult markup elements in Sinatra really simple:
+Sinatra HTML Helpers make rendering markup elements really simple:
 
 ### HTML Select Box: ###
 
@@ -54,4 +54,3 @@ Sinatra HTML Helpers makes rendering difficult markup elements in Sinatra really
       ...
       <option value="1914">1914</option>
     </select>
-    

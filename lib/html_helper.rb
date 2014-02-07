@@ -19,7 +19,8 @@ end
 def html_datepicker(field_name, years, selected_value=[], offset=nil, ascending=false, html_class=nil, html_id=nil)
   require "date"
   # initialize blank variables for use below
-  months, days, year_options, output, selected_day, selected_month, selected_year, years_arr = "", "", "", "", "", "", "", Array.new
+  months, days, year_options, output, selected_day, selected_month, selected_year = "", "", "", "", "", "", ""
+  years_arr = Array.new
   # assign variables to selected values if they exist
   selected_day = selected_value[0].to_i if selected[0]
   selected_month = selected_value[1].to_s if selected[1]

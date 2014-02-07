@@ -17,7 +17,7 @@ Sinatra HTML Helpers makes rendering difficult markup elements in Sinatra really
 
 **Advanced Example:**
 
-    html_select("[user]city", { 'mel' => 'Melbourne', 'nyc' => 'New York City'}, "London", nil, "target_me")
+    html_select("[user]city", { 'mel' => 'Melbourne', 'nyc' => 'New York City'}, "lon", nil, "target_me")
 
     # HTML Output
     <select name="[user]city" id="target_me">

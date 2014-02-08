@@ -19,7 +19,7 @@ Sinatra HTML Helpers make rendering markup elements really simple:
 
     html_select("[user]city", { 'mel' => 'Melbourne', 'nyc' => 'New York City'}, "lon", nil, "target_me")
 
-    # HTML Output
+    <!-- HTML Output -->
     <select name="[user]city" id="target_me">
       <option value="mel">Melbourne</option>
       <option value="nyc">New York City</option>
@@ -30,7 +30,7 @@ Sinatra HTML Helpers make rendering markup elements really simple:
 
     html_datepicker(field_name, years, selected_value, offset, ascending=false, html_class, html_id)
     
-Please note that in the parameters above, `selected_value` takes an array of 3 values (D, M, Y), and `ascending` takes a BOOLEAN value - that is, `true` or `false`.
+Please note that in the parameters above, `selected_value` takes an array of 3 values [D, M, Y], and `ascending` takes a BOOLEAN value - that is, `true` or `false`.
     
 **Simple Example:**
 
